@@ -1,0 +1,61 @@
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-color: #362fd9;
+  --secondary-color: #1aacac;
+  --teritary-color: #2e97a7;
+  --fourth-color: #eeeeee;
+  --background-color: #f6f6f6;
+
+  --header-color: #900c3f;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.page-title {
+  font-size: 24px;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color:rgba(0, 0, 0, 0.87);
+  text-transform: uppercase;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

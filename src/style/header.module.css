@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  background-color: var(--primary-color);
+  color: white;
+  height: 60px;
+  padding: 0 16px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 88;
+}

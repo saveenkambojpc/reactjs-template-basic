@@ -1,0 +1,27 @@
+.sidebar {
+  position: fixed;
+  top: 60px;
+  width: 260px;
+  height: 100%;
+  background-color: white;
+}
+
+.sidebar_item {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px;
+  color: black;
+  background-color: white;
+  gap: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.sidebar_item_active,
+.sidebar_item_active:hover {
+  background-color: var(--primary-color) !important;
+  color: white;
+}
+
+.sidebar_item:hover {
+  background-color: rgb(230, 230, 230);
+}
