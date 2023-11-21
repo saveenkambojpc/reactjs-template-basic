@@ -19,7 +19,7 @@ import {
   HeadCell,
 } from "../../core-ui/Table/helper";
 import ControlledCheckbox from "../../core-ui/ControlledCheckbox";
-import { set_is_modal_open, set_modal_type } from "../../store/features/user";
+import { set_is_modal_open } from "../../store/features/user";
 import { useDispatch } from "react-redux";
 import MuiIconButton from "../../core-ui/MuiIconButton";
 import UsersModal from "./UsersModal";
@@ -110,7 +110,6 @@ export default function ManageUsersTable({
   );
 
   function handleEditButtonClick() {
-    dispatch(set_modal_type("Edit"));
     dispatch(set_is_modal_open(true));
   }
 

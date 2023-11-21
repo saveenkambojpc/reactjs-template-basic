@@ -10,13 +10,10 @@ export const userSlice = createSlice({
     set_is_modal_open: (state, action) => {
       state.is_modal_open = action.payload;
     },
-    set_modal_type: (s, a) => {
-      s.modal_type = a.payload;
-    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { set_is_modal_open, set_modal_type } = userSlice.actions;
+export const { set_is_modal_open } = userSlice.actions;
 
 export default userSlice.reducer;

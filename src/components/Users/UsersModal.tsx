@@ -12,7 +12,7 @@ export default function UsersModal({
   data: UserSchema;
   handleModalClose: () => void;
 }): React.JSX.Element {
-  const { is_modal_open, modal_type } = useSelector(
+  const { is_modal_open } = useSelector(
     (store: any) => store.users
   );
 
@@ -31,7 +31,7 @@ export default function UsersModal({
   return (
     <div>
       <Modal
-        title={`${modal_type} User`}
+        title={`User`}
         open={is_modal_open}
         handleClose={handleModalClose}
         maxWidth="xl"
