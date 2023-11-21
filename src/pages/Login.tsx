@@ -18,13 +18,8 @@ export default function Login() {
 
   return (
     <div className="flex h-screen">
-      <div
-        className="hidden md:block md:w-1/2"
-        style={{
-          background: "linear-gradient(blue,rgba(233,23,0,0.2))",
-        }}
-      ></div>
-      <div className="w-full md:w-1/2 flex justify-center items-center">
+
+<div className="w-full md:w-1/2 flex justify-center items-center">
         <Formik
           validationSchema={validation}
           initialValues={initialValues}
@@ -48,6 +43,13 @@ export default function Login() {
           </Form>
         </Formik>
       </div>
+      <div
+        className="hidden md:block md:w-1/2"
+        style={{
+          background: "linear-gradient(90deg, rgba(216,0,50,1) 0%, rgba(255,166,187,1) 100%)",
+        }}
+      ></div>
+   
     </div>
   );
 }

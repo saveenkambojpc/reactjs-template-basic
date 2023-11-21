@@ -12,21 +12,7 @@ export default function Sidebar() {
   const { is_sidebar_collapsed } = useSelector((s: any) => s.helper);
 
   const content = [
-    {
-      label: "Dashboard",
-      to: ROUTES.dashboard,
-      icon: <Dashboard />,
-    },
-    {
-      label: "Logs",
-      to: ROUTES.logs,
-      icon: <Summarize />,
-    },
-    {
-      label: "Report",
-      to: ROUTES.reports,
-      icon: <Summarize />,
-    },
+ 
     {
       label: "Manage Users",
       to: ROUTES.users,

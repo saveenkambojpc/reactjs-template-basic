@@ -20,13 +20,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --primary-color: #362fd9;
-  --secondary-color: #1aacac;
-  --teritary-color: #2e97a7;
-  --fourth-color: #eeeeee;
-  --background-color: #f6f6f6;
+  /* also change in the theme.tsx */
+  --primary-color: #D80032;
+  --background-color: white;
 
-  --header-color: #900c3f;
+  --header-color: #D80032;
 }
 body {
   padding: 0;
@@ -43,7 +41,7 @@ a {
   font-size: 24px;
   margin-bottom: 0.75rem;
   font-weight: 600;
-  color:rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.87);
   text-transform: uppercase;
 }
 
